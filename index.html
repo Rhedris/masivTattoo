@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatto shop</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/051f1f7418.js" crossorigin="anonymous"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="app.js" defer></script>
+    <script src="animation.js" defer></script>
+
+</head>
+
+<body>
+    <div id="Hero">
+        <Header>
+            <a href="#Hero"><img src="Images/Logo.png"></a>
+                
+            <div class="navbar">
+                <li><a href="#About">ABOUT ME</a></li>
+                <li><a href="#Service">SERVICES</a></li>
+                <li><a href="#Gallery">GALLERY</a></li>
+                <li><a href="#Contact">CONTACTS</a></li>
+            </div>
+
+            <div class="Social" style="font-size: 26px;">
+                <p style="font-size: 18px; font-family: 'Oswald', sans-serif; font-weight: 200;">masiv.tattoo@email.cz</p>
+                <a href="https://www.instagram.com/masiv.tattoo/" style="color: white;"><i class="fa-brands fa-instagram"></i></a>
+                <a href="" style="color: white;"><i class="fa-brands fa-facebook-messenger"></i></a>
+            </div>
+            
+        </Header>
+
+        <div class="container">
+            <div class="wrapper">
+                <div class="column hidden">
+                    <h1 class="Tat" style="font-family: Glitch; font-size: 120px;">Masiv</h1>
+                    <h6 class="Std" style="font-family: Storm; font-size: 150px;">tattoo</h6>
+                    <button onclick="window.location.href='#Contact'" class="btn button" style="padding: 15px; border: none;">Make Apointment</button>
+                </div>
+
+                <div class="column">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="About">
+        <div class="container">
+            <h1>The Artist</h1>
+            <div class="About hidden">
+                <div class="Photo"><img src="Images/Mates 1.png" alt=""></div>
+            </div>
+            <div class="Lore">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At aspernatur ducimus vero molestiae illo magnam sunt. Odio voluptates laborum, temporibus excepturi et, nulla provident sit officiis illum, quam ad labore!</p>
+            </div>
+            <h2 style="position: relative; left: 420px; font-size: 30px;">Matěj</h2>
+        </div>
+    </div>
+
+
+    <div id="Service" class="hidden">
+        <div class="container">
+            <div class="Box">
+                <h1>Pricing</h1>
+                <div class="List">
+                    <h2>1. Tattoo <i class="fa-solid fa-arrow-right"></i></h2>
+                    <h2>2. Fixing Tattoo <i class="fa-solid fa-arrow-right"></i></h2>
+                    <h2>3. ... <i class="fa-solid fa-arrow-right"></i></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Gallery">
+        
+        <h1 class="hidden">Gallery</h1>
+        <div class="Gal-wrap">
+            <i class="fa-solid fa-angle-left" id="backBtn"></i>
+            <div class="Gal">
+                <div>
+                    <span><img src="Images/pic4.jpg"></span>
+                    <span><img src="Images/pic2.jpg"></span>
+                    <span><img src="Images/pic3.jpg"></span>
+                </div>
+    
+                <div>
+                    <span><img src="Images/pic3.jpg"></span>
+                    <span><img src="Images/pic4.jpg"></span>
+                    <span><img src="Images/pic2.jpg"></span>
+                </div>
+            </div>
+            <i class="fa-solid fa-angle-right" id="frontBtn"></i>
+        </div>
+        
+    </div>
+
+
+    <div id="Contact">
+        <div class="info">
+            <div class="container">
+                <div class="con">
+                    <div class="contact-left">
+
+                    </div>
+                    <div class="contact-right">
+                        <div class="Wr"><h2 style="font-size: 80px; font-family: Storm">Write me</h2></div>
+                        <form class="form-inline" action="/action_page.php">
+                            <input type="name" class="resizedTextbox" name="Name" placeholder="Name" required>
+                            <input type="email" class="resizedTextbox" name="Email" placeholder="E-Mail" required>
+                            <input type="text" class="resizedTextbox" name="Subject" placeholder="Subject">
+                            <textarea name="message" class="resizedTextMesbox" placeholder="Message"></textarea>
+                            <button type="submit" class="but" style="background-color: #440bd4;">Send Message</button>   
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p><i class="fa-regular fa-copyright"></i> 2023 Coded and Designed by Ho Viet</p>
+    </footer>
+
+
+
+</body>
+</html>
